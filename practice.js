@@ -197,20 +197,20 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   addItem() --> [];
 */
 
-Code Here
-function removeItem(myGroceryList, item) {
-  if(myGroceryList == true && item == true) {
-  for( let i = 0; i < myGroceryList.length; i++){
-    if (myGroceryList[i] === item) {
-      myGroceryList.splice(i, i + 1)
-    }
-  }
-  return myGroceryList
-}
-else {
-  return arry
-}
-}
+// Code Here
+// function removeItem(myGroceryList, item) {
+//   if(myGroceryList == true && item == true) {
+//   for( let i = 0; i < myGroceryList.length; i++){
+//     if (myGroceryList[i] === item) {
+//       myGroceryList.splice(i, i + 1)
+//     }
+//   }
+//   return myGroceryList
+// }
+// else {
+//   return arry
+// }
+// }
 
 
 
