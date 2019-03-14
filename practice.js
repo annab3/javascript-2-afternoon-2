@@ -197,21 +197,33 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   addItem() --> [];
 */
 
-// Code Here
-// function removeItem(myGroceryList, item) {
-//   if(myGroceryList == true && item == true) {
-//   for( let i = 0; i < myGroceryList.length; i++){
-//     if (myGroceryList[i] === item) {
-//       myGroceryList.splice(i, i + 1)
-//     }
-//   }
-//   return myGroceryList
-// }
-// else {
-//   return arry
-// }
-// }
 
+// Code Here
+function removeItem(myGroceryList, item) {
+  if(myGroceryList && item ) {
+  for (let i = 0; i < myGroceryList.length; i++){
+    if (myGroceryList[i] === item){
+      myGroceryList.splice(i, 1)
+    }
+  }
+  return myGroceryList
+}
+else {
+  let arr = []
+  return arr
+}
+}
+
+function addItem(myGroceryList, item) {
+  if (myGroceryList && item) {
+    myGroceryList.push(item)
+    return myGroceryList
+  }
+  else {
+    let arr = []
+    return arr
+  }
+}
 
 
 ////////// PROBLEM 9 //////////
@@ -221,7 +233,13 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
 //Code Here
-
+function maker() {
+  let arr = []
+  for (let i = 1; i <= 215; i++) {
+    arr.push(i)
+  }
+  return arr
+}
 
 
 ////////// PROBLEM 10 //////////
@@ -237,7 +255,12 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
-
+function addTen(numbers) {
+  for (let i = 0; i < numbers.length; i++) {
+    numbers.splice(i, 1, parseInt(numbers[i]) + 10)
+  }
+  return numbers
+}
 
 
 ////////// PROBLEM 11 //////////
@@ -262,7 +285,14 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function longer(arr1, arr2) {
+  if(arr1.length > arr2.length) {
+    return arr1
+  }
+  else {
+    return arr2
+  }
+}
 
 
 /*
@@ -274,7 +304,17 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
+function both(arr1, arr2) {
+  let newarr = []
+  for(let i = 0; i < arr1.length; i++) {
+    for (let j = 0; j < arr2.length; j++) {
+      if (arr1[i] === arr2[j]) {
+        newarr.push(arr1[i])
+      }
+    }
+  }
+  return newarr
+}
 
 
 ////////// PROBLEM 12 //////////
@@ -314,7 +354,11 @@ var colt = {
 */
 
 //Code Here
-
+devMountainEmployees.push(tyler)
+devMountainEmployees.push(cahlan)
+devMountainEmployees.push(ryan)
+devMountainEmployees.push(colt)
+console.log(devMountainEmployees.length)
 
 
 /*
@@ -323,8 +367,12 @@ var colt = {
 */
 
 //Code Here
-
-
+for (let i = 0; i < devMountainEmployees.length; i++) {
+  if(devMountainEmployees[i] === cahlan) {
+    devMountainEmployees.splice(i, 1)
+  }
+}
+console.log(devMountainEmployees.length)
 
 ////////// PROBLEM 13 //////////
 
@@ -335,7 +383,7 @@ var colt = {
 */
 
 //Code Here
-
+let users = []
 
 
 /*
@@ -354,8 +402,21 @@ var user1 = {
 // Do not edit the code above.
 
 //Code Here
-
-
+let user2 = {
+  name: "Ham Sandwhich",
+  email: "suckit@gmail.com",
+  password: "sure",
+  username: "NeedHelp"
+}
+let user3 = {
+  name: "Turkey Tom",
+  email: "troubledTurkey@gmail.com",
+  password: "squak",
+  username: "eatmorechicken"
+}
+users.push(user1)
+users.push(user2)
+users.push(user3)
 
 /*
   Now you have a very common data structure. 
@@ -368,7 +429,11 @@ var user1 = {
 */
 
 //Code Here
-
+for (let i = 0; i < users.length; i++){
+  if (users[i].name === "Tyler McGinnis") {
+    users.splice(i, 1)
+  }
+}
 
 
 /*
